@@ -6,11 +6,63 @@
     <title>Название сайта</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Задание 1. Всплывающее окно с текстом -->
+    <script>
+        alert("Привет, мир!");
+
+        // Задание 2. Вычислить результат 158 + 2
+        alert(`Результат: ${158 + 2}`);
+
+        // Задание 3. Передать строковый параметр в диалоговое окно
+        let name = 'Иван';
+        alert(`Привет, ${name}`);
+
+        // Задание 4. Вызвать диалоговое окно с заголовком “Как вас зовут?” и подсказкой в поле ввода “Имя”. Вывести имя, которое ввели в поле ввода.
+        let askName = prompt("Как вас зовут?", "Имя");
+        alert(askName);
+
+        // Задание 5. Написать функцию выводящую в диалоговом окне текст и переменную. Например, “Привет, Алевтина”. Где имя “Алевтина” это внешняя переменная.
+        let userName = 'Алевтина';
+
+        function showMessage() {
+            let message = 'Привет, ' + userName;
+            alert(message);
+        }
+
+        showMessage();
+
+        // Задание 6. вывести на экран в диалоговом окне текст с сообщением: “Вы уверены?” и кнопками «ОК» , «Отмена». При нажатии на кнопку “ОК” вывести в диалоговом окне текст с сообщением “Мы рады, что Вы уверены!”. При нажатии на кнопку “Отмена” вывести в диалоговом окне текст с сообщением “Жаль, что Вы не уверены…”.
+
+        if (confirm("Вы уверены?")) {
+            alert("Мы рады, что вы уверены!")
+        } else {
+            alert("Жаль, что вы не уверены...")
+        }
+
+        // Задание 7. перепишите код, используя конструкцию switch-case, запрашивая возраст пользователя через диалоговое окно.
+
+        let age = prompt("Сколько вам лет?")
+        switch (age) {
+            case '18':
+                alert("Вы совершеннолетний, все можно!");
+                break;
+            case '10':
+                alert("Вам надо учить уроки");
+                break;
+            case '30':
+                alert("Ложитесь спать, завтра на работу");
+                break;
+            default:
+                alert("Мы не знаем, что вам делать");
+                break;
+        }
+    </script>
+
     <header>
         <h1>Главная</h1>
     </header>
@@ -26,13 +78,19 @@
         <div class="block1">
             <p class="first">
                 <img src="img/cat1.jpeg" alt="котики" width="200">
-                <strong>Lorem</strong> <i>ipsum</i> <u>dolor</u> sit amet consectetur, adipisicing elit. Nulla eum distinctio odio numquam ipsa ut alias rem, voluptatibus modi fugiat eius. Tempora nobis nesciunt ratione minima mollitia quis consectetur temporibus est molestiae rerum cum laudantium eaque beatae sequi unde doloribus officiis, qui aut dolores ut! Dolorum eos, sequi non voluptatem aperiam, consequatur perspiciatis laboriosam est deleniti laborum minus fugiat?
+                <strong>Lorem</strong> <i>ipsum</i> <u>dolor</u> sit amet consectetur, adipisicing elit. Nulla eum
+                distinctio odio numquam ipsa ut alias rem, voluptatibus modi fugiat eius. Tempora nobis nesciunt ratione
+                minima mollitia quis consectetur temporibus est molestiae rerum cum laudantium eaque beatae sequi unde
+                doloribus officiis, qui aut dolores ut! Dolorum eos, sequi non voluptatem aperiam, consequatur
+                perspiciatis laboriosam est deleniti laborum minus fugiat?
             </p>
             <p class="second">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum libero quae error laborum ex labore qui odit amet molestias explicabo facilis provident doloremque voluptatum enim, voluptatibus ratione saepe quibusdam porro?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum libero quae error laborum ex labore
+                qui odit amet molestias explicabo facilis provident doloremque voluptatum enim, voluptatibus ratione
+                saepe quibusdam porro?
             </p>
         </div>
-      
+
         <p class="second">Описание котика</p>
         <ol>
             <li>Пушистый</li>
@@ -46,7 +104,7 @@
     </footer>
     <hr>
 
-    
+
 
 </body>
 
